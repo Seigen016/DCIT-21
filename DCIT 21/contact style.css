@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url('./pics/bg2.jpg');
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    
+    padding-top: 2%;
+    box-sizing: border-box;
+    animation: transitionIn 0.75s;
+    color: #fcfcfc;
+    font-family: sans-serif;
+}
+
+.nav {
+    padding: 5px;
+    background-color: #3C6255;
+    width: 100%;
+    height: -100px;
+
+    
+}
+
+.ogol{
+    box-sizing: border-box;
+    margin-top: -1027px;
+    margin-left: 0px;
+    margin-right: 100px;
+    float: none;
+}
+
+.logo{
+    width: 50px;
+}
+
+.nav-items {
+    display: inline-block;
+    float: right;
+    list-style: none;
+
+}
+
+.nav-item1 {
+    float: left;
+    display: inline-block;
+    padding: 5px;
+    cursor: pointer;
+    color: #ffff;
+    
+}
+.nav-item2 {
+    float: left;
+    display: inline-block;
+    padding: 5px;
+    cursor: pointer;
+    color: #ffff;
+    
+}
+.nav-item3 {
+    float: left;
+    display: inline-block;
+    padding: 5px;
+    cursor: pointer;
+    color: #ffff;
+    
+}
+.nav-item4 {
+    float: left;
+    display: inline-block;
+    padding: 5px;
+    cursor: pointer;
+    color: #ffff;
+    
+}
+
+.nav-item:hover {
+    color: lightsalmon;
+}
+
+.nav::after {
+    display: table;
+    content: '';
+    clear: both;
+}
+
+.fa-house-chimney{
+    width: 30px;
+}
+
+.fa-pen-to-square{
+    width: 30px;
+}
+
+.fa-newspaper{
+    width: 30px;
+}
+
+.fa-arrow-left{
+    margin-left: 0%;
+    width: 0px;
+}
+.pictures {
+    display: flex;
+    justify-content: space-between;
+    padding: 5%;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.contacts{
+    cursor: pointer;
+    transition: transform 0.5s ;
+}
+.gallery{
+    cursor: pointer;
+    transition: transform 0.5s ;
+}
+.programs{
+    cursor: pointer;
+    transition: transform 0.5s ;
+}
+.about{
+    cursor: pointer;
+    transition: transform 0.5s ;
+}
+
+.imgnames {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 120px;
+    margin-right: 130px;
+    box-sizing: border-box;
+}
+#content {
+            position: relative;
+        }
+footer{
+    text-align: end;
+    background-attachment: fixed;
+}
+
+body {
+    animation: transitionIn 0.50s ease-in;
+}
+
+.about:hover{
+    transform: translateY(-10px);
+}
+.gallery:hover{
+    transform: translateY(-10px);
+}
+.programs:hover{
+    transform: translateY(-10px);
+}
+.contacts:hover{
+    transform: translateY(-10px);
+}
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: rotateX('-15deg');
+    }
+    to {
+        opacity: 1;
+        transform: rotateX('0');
+    }
+}
+
+.team{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.team-content{
+	width: 100%;
+	max-width: 1350px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+	align-items: center;
+	gap: 2rem;
+	text-align: center;
+	margin-top: 4rem;
+}
+.team-content img{
+	width: 70%;
+	height: auto;
+	border-radius: 15px;
+	margin-bottom: 15px;
+}
+.center h1{
+	color: #fff;
+	font-size: 4rem;
+	text-align: center;
+}
+.box{
+	padding: 16px;
+	backdrop-filter: blur(5px);
+	border-radius: 15px;
+	transition: all .38s ease;
+
+}
+.box h3{
+	font-size: 23px;
+	font-weight: 600;
+	color: #fff;
+	margin-bottom: 8px;
+}
+.box h5{
+	font-size: 15px;
+	font-weight: 600;
+	color: #b7b4bb;
+	margin-bottom: 15px;
+	letter-spacing: 2px;
+}
+.icons i{
+	display: inline-block;
+	color: #fff;
+	font-size: 20px;
+	margin: 0 8px;
+	transition: all .38s ease;
+}
+.icons i:hover{
+	transform: scale(1.2);
+}
+.box:hover{
+	transform: translateY(-10px);
+	cursor: pointer;
+}
+
+.box h6{
+    font-size: 10px;
+	font-weight: 600;
+	color: #b7b4bb;
+	margin-bottom: 15px;
+	letter-spacing: 2px;
+}
+@media(max-width: 1240px){
+	.team{
+		width: 100%;
+		height: auto;
+		padding: 90px 2%;
+	}
+	.center h1{
+		font-size: 3.2rem;
+	}
+}
